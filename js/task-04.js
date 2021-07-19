@@ -16,14 +16,11 @@ incrementBtn.classList.add('button-increment')
 const valueEl = document.querySelector('#value');
 
 
-console.log(decrementBtn);
-console.log(incrementBtn);
-console.log(valueEl);
+
 
 decrementBtn.addEventListener('click', function() {
     console.log('кликнули на дикремент!');
     counterValue.decrement();
-    console.log(counter);
 
 
     valueEl.textContent = counterValue.value;
@@ -31,7 +28,7 @@ decrementBtn.addEventListener('click', function() {
 incrementBtn.addEventListener('click', function() {
     console.log('кликнули на инкремент!')
     counterValue.increment();
-    console.log(counter);
+
 
     valueEl.textContent = counterValue.value;
 
